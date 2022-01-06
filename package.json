@@ -1,0 +1,36 @@
+{
+  "name": "saucelabs-nodejs-sample",
+  "version": "1.0.0",
+  "description": "Basic sample to get started writing Selenium tests on Sauce Labs with WebDriverIO",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dpgraham/saucelabs-nodejs-sample.git"
+  },
+  "keywords": [
+    "sauce",
+    "saucelabs",
+    "selenium"
+  ],
+  "author": "Dan Graham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dpgraham/saucelabs-nodejs-sample/issues"
+  },
+  "homepage": "https://github.com/dpgraham/saucelabs-nodejs-sample#readme",
+  "dependencies": {
+    "webdriverio": "^7.16.12"
+  },
+  "devDependencies": {
+    "@wdio/cli": "^7.16.12",
+    "@wdio/local-runner": "^7.16.12",
+    "@wdio/mocha-framework": "^7.16.11",
+    "@wdio/sauce-service": "^7.16.12",
+    "@wdio/spec-reporter": "^7.16.11",
+    "chromedriver": "^96.0.0",
+    "wdio-chromedriver-service": "^7.2.4"
+  }
+}
