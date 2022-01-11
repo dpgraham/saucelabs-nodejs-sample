@@ -24,7 +24,7 @@ npm ci
 npm run test
 ```
 
-The environment variable `HOME_PAGE` should be the website that you wish to test (this can even be "localhost" thanks to the tunneling power of SauceConnect).
+(The environment variable `HOME_PAGE` should be the website that you wish to test, which can even be "localhost" thanks to the tunneling power of SauceConnect).
 
 Congratulations! You just ran your first successful Selenium test on our Sauce Labs cloud. Now visit https://app.saucelabs.com/dashboard/tests and have a look at your test results.
 

@@ -25,4 +25,5 @@ jobs:
         SAUCE_USERNAME: ${{ secrets.SAUCE_USERNAME }}
         SAUCE_ACCESS_KEY: ${{ secrets.SAUCE_ACCESS_KEY }}
         HOME_PAGE: http://example.com
-    
+    - name: Message
+      run: echo "Go to https://app.saucelabs.com/dashboard/builds/vdc and find the build called $GITHUB_RUN_ID to view results"
