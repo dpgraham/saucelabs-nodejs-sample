@@ -63,7 +63,7 @@ exports.config = {
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
         // excludeDriverLogs: ['bugreport', 'server'],
         "sauce:options": {
-            build: process.env.BUILD_NAME || process.env.GITHUB_JOB_ID,
+            build: process.env.BUILD_NAME || process.env.GITHUB_RUN_ID,
             extendedDebugging: true,
             capturePerformance: true,
         },
@@ -72,7 +72,7 @@ exports.config = {
         browserName: 'microsoftedge',
         acceptInsecureCerts: true,
         "sauce:options": {
-            build: process.env.BUILD_NAME || process.env.GITHUB_JOB_ID,
+            build: process.env.BUILD_NAME || process.env.GITHUB_RUN_ID,
             extendedDebugging: true,
             capturePerformance: true,
         },
@@ -80,7 +80,7 @@ exports.config = {
         maxInstances: 5,
         browserName: 'safari',
         "sauce:options": {
-            build: process.env.BUILD_NAME || process.env.GITHUB_JOB_ID
+            build: process.env.BUILD_NAME || process.env.GITHUB_RUN_ID
         },
     }],
     //
