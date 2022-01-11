@@ -26,4 +26,4 @@ jobs:
         SAUCE_ACCESS_KEY: ${{ secrets.SAUCE_ACCESS_KEY }}
         HOME_PAGE: https://example.com
     - name: View Test Results on Sauce Labs
-      run: echo "Go to https://app.saucelabs.com/dashboard/builds/vdc and find the build called ${{env.GITHUB_RUN_ID}} to view results"
+      run: echo "Go to https://app.saucelabs.com/dashboard/builds/vdc and find the build with this associated RUN_ID to view results"
