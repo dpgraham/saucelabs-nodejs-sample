@@ -62,17 +62,26 @@ exports.config = {
         // it is possible to configure which logTypes to include/exclude.
         // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
         // excludeDriverLogs: ['bugreport', 'server'],
-        extendedDebugging: true,
-        capturePerformance: true,
+        "sauce:options": {
+            build: `Job #${process.env.BUILD_NAME || process.env.GITHUB_RUN_ID}`,
+            extendedDebugging: true,
+            capturePerformance: true,
+        },
     }, {
         maxInstances: 5,
         browserName: 'microsoftedge',
         acceptInsecureCerts: true,
-        extendedDebugging: true,
-        capturePerformance: true,
+        "sauce:options": {
+            build: `Job #${process.env.BUILD_NAME || process.env.GITHUB_RUN_ID}`,
+            extendedDebugging: true,
+            capturePerformance: true,
+        },
     }, {
         maxInstances: 5,
         browserName: 'safari',
+        "sauce:options": {
+            build: `Job #${process.env.BUILD_NAME || process.env.GITHUB_RUN_ID}`,
+        },
     }],
     //
     // ===================

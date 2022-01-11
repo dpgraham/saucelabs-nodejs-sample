@@ -1,6 +1,6 @@
 const homePage = process.env.HOME_PAGE || "http://www.google.com";
 
-describe('Sauce Labs visual test', () => {
+describe.skip('Sauce Labs visual test', () => {
     before(async function () {
         await browser.executeScript('/*@visual.init*/', ['My Web Page']);
     });

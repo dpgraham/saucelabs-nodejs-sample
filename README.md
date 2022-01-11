@@ -24,6 +24,8 @@ npm ci
 npm run test
 ```
 
+(The environment variable `HOME_PAGE` should be the website that you wish to test, which can even be "localhost" thanks to the tunneling power of SauceConnect).
+
 Congratulations! You just ran your first successful Selenium test on our Sauce Labs cloud. Now visit https://app.saucelabs.com/dashboard/tests and have a look at your test results.
 
 ## Run your tests in GitHub Actions CI/CD
@@ -37,7 +39,7 @@ Congratulations! You just ran your first successful Selenium test on our Sauce L
 
 ### Add your GitHub Actions workflows
 
-This project already has GitHub Actions.
+This project already has GitHub Actions. Just set the `HOME_PAGE` in ./github/workflows/sauce-e2e.yml to your desired test page.
 
 Run the command `npm run make-pull-request` to get a close look at how Sauce Labs works with your CI/CD workflows.
 
