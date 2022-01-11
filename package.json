@@ -4,7 +4,7 @@
   "description": "Basic sample to get started writing Selenium tests on Sauce Labs with WebDriverIO",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "wdio run wdio.conf.js"
   },
   "repository": {
     "type": "git",

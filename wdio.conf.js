@@ -64,6 +64,15 @@ exports.config = {
         // excludeDriverLogs: ['bugreport', 'server'],
         extendedDebugging: true,
         capturePerformance: true,
+    }, {
+        maxInstances: 5,
+        browserName: 'microsoftedge',
+        acceptInsecureCerts: true,
+        extendedDebugging: true,
+        capturePerformance: true,
+    }, {
+        maxInstances: 5,
+        browserName: 'safari',
     }],
     //
     // ===================
@@ -146,7 +155,7 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000
+        timeout: 120000
     },
     //
     // =====
